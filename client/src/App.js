@@ -17,33 +17,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <AppContainer>
           <Navbar />
+          <Portfolio />
           <Home />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
-          <Portfolio />
           <Footer />
         </AppContainer>
       </ThemeProvider>

@@ -1,7 +1,8 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
+import image1 from '../assets/images/image1.jpg';
+import image2 from '../assets/images/image2.jpg';
 
 const CarouselComponent = () => {
   const data = [
@@ -21,7 +22,7 @@ const CarouselComponent = () => {
       id: 3,
       title: 'Slide 3',
       description: 'Slide 3 description',
-      image: 'https://images.pexels.com/photos/220453/'
+      image: { image1 }
     },
     {
       id: 4,
@@ -33,12 +34,11 @@ const CarouselComponent = () => {
       id: 5,
       title: 'Slide 5',
       description: 'Slide 5 description',
-      image: 'https://images.unsplash.com/face-springmorning.jpg?q=75&fm=jpg&w=1080&fit=max'
+      image: { image2 }
     }
   ]
   return (
     <>
-      <h1>Carousel</h1>
       <Carousel>
         {data.map(item => (
           <div key={item.id}>
