@@ -7,8 +7,8 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 const AppContainer = styled.div`
-  width: 100vw;
-  background-color: ${({ theme }) => theme.colors.primary};
+  max-width: 100vw;
+  /* background-color: ${({ theme }) => theme.colors.primary}; */
   color: ${({ theme }) => theme.colors.secondary};
 `
 function App() {
@@ -18,6 +18,31 @@ function App() {
         <AppContainer>
           <Navbar />
           <Home />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
           <Portfolio />
           <Footer />
         </AppContainer>
