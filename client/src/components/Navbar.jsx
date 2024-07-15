@@ -4,14 +4,14 @@ import { FlexRow } from '../styles/GlobalStyle'
 
 const NavContainer = styled.div`
   width: 100%;
-  /* height: 3rem; */
+  /* height: 5rem; */
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.secondary};
   padding: 0.5rem 1rem;
 `
 const Logo = styled.img`
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   /* border-radius: 50%; */
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 `
@@ -52,12 +52,30 @@ const ListItems = styled.li`
 
   
 `
+const Name = styled.div`
+  height: 3rem;
+  max-width: min-content;
+  font-family: ${({ theme }) => theme.fonts.tertiary};
+  font-size: 3rem;
+
+  overflow: hidden;
+  border-right: 2px solid ${({ theme }) => theme.colors.tertiary};
+  white-space: nowrap;  
+
+  animation: typing 4s steps(20,end) infinite;
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 43% }
+  }
+`
 const Navbar = () => {
   return (
     <>
       <NavContainer>
         <FlexRow>
           <Logo src="https://avatars.githubusercontent.com/u/665651?v=5" />
+          <Name>Fardeen Zafar</Name>
           <NavList>
             <ListItems>Home</ListItems>
             <ListItems>Portfolio</ListItems>

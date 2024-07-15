@@ -22,7 +22,7 @@ const CarouselComponent = () => {
       id: 3,
       title: 'Slide 3',
       description: 'Slide 3 description',
-      image: { image1 }
+      image: 'https://loremflickr.com/800/300'
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const CarouselComponent = () => {
       id: 5,
       title: 'Slide 5',
       description: 'Slide 5 description',
-      image: { image2 }
+      image: 'https://picsum.photos/800/300'
     }
   ]
   return (

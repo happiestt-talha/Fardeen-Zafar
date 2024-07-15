@@ -7,5 +7,6 @@ export const theme = {
     fonts: {
         primary: 'Playwrite CZ',
         secondary: 'Dancing Script',
+        tertiary: "Lilita One"
     }
 }
