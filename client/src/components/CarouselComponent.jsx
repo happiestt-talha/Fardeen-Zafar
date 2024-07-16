@@ -10,7 +10,8 @@ const CarouselComponent = () => {
       id: 1,
       title: 'Slide 1',
       description: 'Slide 1 description',
-      image: 'https://loremflickr.com/800/300'
+      // random images via unsplash
+      image: 'https://unsplash.it/800/300'
     },
     {
       id: 2,
@@ -39,7 +40,7 @@ const CarouselComponent = () => {
   ]
   return (
     <>
-      <Carousel>
+      <Carousel autoPlay infiniteLoop interval={3000}>
         {data.map(item => (
           <div key={item.id}>
             <img src={item.image} alt={item.title} />

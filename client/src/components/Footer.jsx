@@ -30,7 +30,7 @@ const HeartPara = styled.p`
     color: inherit;
   }
   &:hover :last-child{
-    color: red;
+    color: rgb(254, 242, 227);
     transform: scale(1.5);
   }
 `
