@@ -8,12 +8,19 @@ const NavContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.secondary};
   padding: 0.5rem 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 `
 const Logo = styled.img`
   width: 4rem;
   height: 4rem;
   /* border-radius: 50%; */
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  
 `
 const NavList = styled.ul`
   display: flex;
@@ -21,6 +28,10 @@ const NavList = styled.ul`
   justify-content: space-between;
   margin-left: auto;
   padding:.5rem 1rem ;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 const ListItems = styled.li`
   list-style: none;
@@ -62,7 +73,7 @@ const Name = styled.div`
   border-right: 2px solid ${({ theme }) => theme.colors.tertiary};
   white-space: nowrap;  
 
-  animation: typing 4s steps(20,end) infinite;
+  animation: typing 4s steps(20,end) 6s 1 normal forwards;
 
   @keyframes typing {
     from { width: 0 }
@@ -73,7 +84,6 @@ const Navbar = () => {
   return (
     <>
       <NavContainer>
-        <FlexRow>
           <Logo src="https://avatars.githubusercontent.com/u/665651?v=5" />
           <Name>Fardeen Zafar</Name>
           <NavList>
@@ -82,7 +92,6 @@ const Navbar = () => {
             <ListItems>About</ListItems>
             <ListItems>Contact</ListItems>
           </NavList>
-        </FlexRow>
       </NavContainer>
     </>
   )

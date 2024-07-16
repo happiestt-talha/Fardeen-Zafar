@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 
 const AppContainer = styled.div`
   max-width: 100vw;
-  /* background-color: ${({ theme }) => theme.colors.primary}; */
+  background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.secondary};
 `
 function App() {
