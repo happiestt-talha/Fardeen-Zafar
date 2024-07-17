@@ -93,7 +93,7 @@ const Portfolio = () => {
     <>
       <PortfolioContainer>
         <Content>
-          <Name>Fardeen Khan</Name>
+          <Name>Fardeen Zafar</Name>
           <Text>Welcome to my portfolio, where storytelling comes alive through the lens. I am FARDEEN ZAFAR, a passionate filmmaker dedicated to crafting compelling narratives that resonate deeply with audiences. With a keen eye for detail and a commitment to excellence, I invite you to explore a collection of my works that span (Advertisment, Music videos, Short films), each crafted with creativity, vision, and a drive to evoke emotion and provoke thought. From short films to music videos, every project showcases my dedication to the art of visual storytelling. Join me on this journey through the power of cinema.
           </Text>
         </Content>
