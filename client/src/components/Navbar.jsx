@@ -1,6 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { FlexRow } from '../styles/GlobalStyle'
 
 const NavContainer = styled.div`
   width: 100%;
@@ -14,13 +14,6 @@ const NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-`
-const Logo = styled.img`
-  width: 4rem;
-  height: 4rem;
-  /* border-radius: 50%; */
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-  
 `
 const NavList = styled.ul`
   display: flex;
@@ -64,16 +57,20 @@ const ListItems = styled.li`
   
 `
 const Name = styled.div`
-  height: 3rem;
+  padding: 0 1rem;
   max-width: min-content;
-  font-family: ${({ theme }) => theme.fonts.tertiary};
+  font-family: ${({ theme }) => theme.fonts.secondary};
+  font-weight: 600;
   font-size: 3rem;
+  color: ${({ theme }) => theme.colors.secondary};
+  text-shadow: 0px 0px 6px ${({ theme }) => theme.colors.secondary};
+  /* margin-inline-start: 33rem; */
 
   overflow: hidden;
-  border-right: 2px solid ${({ theme }) => theme.colors.tertiary};
   white-space: nowrap;  
-
-  animation: typing 4s steps(20,end) 6s 1 normal forwards;
+  
+  /* border-right: 2px solid ${({ theme }) => theme.colors.tertiary}; */
+  /* animation: typing 4s steps(20,end) 6s 1 normal forwards; */
 
   @keyframes typing {
     from { width: 0 }
@@ -84,14 +81,12 @@ const Navbar = () => {
   return (
     <>
       <NavContainer>
-          <Logo src="https://avatars.githubusercontent.com/u/665651?v=5" />
-          <Name>Fardeen Zafar</Name>
-          <NavList>
-            <ListItems>Home</ListItems>
-            <ListItems>Portfolio</ListItems>
-            <ListItems>About</ListItems>
-            <ListItems>Contact</ListItems>
-          </NavList>
+        <Name>Portfolio</Name>
+        <NavList>
+          <ListItems>Portfolio</ListItems>
+          <ListItems>About</ListItems>
+          <ListItems>Contact</ListItems>
+        </NavList>
       </NavContainer>
     </>
   )

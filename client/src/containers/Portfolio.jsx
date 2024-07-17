@@ -21,16 +21,21 @@ const Content = styled.div`
 
 const Text = styled.p`
   width: fit-content;
-  padding: 2rem 15rem;
-  font-family: ${({ theme }) => theme.fonts.primary};
-  font-size: 1.3rem;
+  padding: 2rem 10rem;
+  font-family: ${({ theme }) => theme.fonts.quaternary};
+    /* text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.soft}; */
+
+  font-size: 1.5rem;
   position: relative;
+  line-height: 2rem;
+  text-align: justify;
 
   &::after {
-    content: 'ZFK';
+    content: 'FZK';
     position: absolute;
     left: 25rem;
-    top: 1rem;
+    top:8rem;
+
     font-family: ${({ theme }) => theme.fonts.secondary};
     font-size: 15rem;
     color: rgba(187, 79, 17, 0.384);
@@ -73,14 +78,23 @@ const Text = styled.p`
     }
   }
 `;
+const Name = styled.h1`
+  font-family: ${({ theme }) => theme.fonts.secondary};
+  text-shadow: 0px 0px 5px ${({ theme }) => theme.colors.soft};
+  font-size: 4rem;
+  color: ${({ theme }) => theme.colors.soft};
 
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
+  `
 const Portfolio = () => {
   return (
     <>
       <PortfolioContainer>
         <Content>
-          <Text>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo corrupti quos illo illum nulla. Recusandae, mollitia molestiae. In quidem libero natus, commodi iste debitis. Aperiam et modi explicabo, eveniet illo rem error nulla mollitia cupiditate ex officia enim dicta? Corrupti quos fugiat sapiente. Cum deserunt aspernatur quam perferendis quaerat?
+          <Name>Fardeen Khan</Name>
+          <Text>Welcome to my portfolio, where storytelling comes alive through the lens. I am FARDEEN ZAFAR, a passionate filmmaker dedicated to crafting compelling narratives that resonate deeply with audiences. With a keen eye for detail and a commitment to excellence, I invite you to explore a collection of my works that span (Advertisment, Music videos, Short films), each crafted with creativity, vision, and a drive to evoke emotion and provoke thought. From short films to music videos, every project showcases my dedication to the art of visual storytelling. Join me on this journey through the power of cinema.
           </Text>
         </Content>
       </PortfolioContainer>
