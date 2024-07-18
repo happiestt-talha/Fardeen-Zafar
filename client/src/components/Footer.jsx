@@ -45,7 +45,7 @@ const Footer = () => {
     <>
       <FooterContainer>
         <p>Copyright &copy; {new Date().getFullYear()}</p>
-        <HeartPara>Created by <a href='https://www.linkedin.com/in/mt4lha' target='_blank' rel='noreferrer'>DEVED</a> with love <Heart>&hearts;</Heart> </HeartPara>
+        <HeartPara>Created by <a href='https://www.linkedin.com/in/mt4lha' target='_blank' rel='noreferrer'>DEVED</a><Heart>&hearts;</Heart> </HeartPara>
       </FooterContainer>
     </>
   )
