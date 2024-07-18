@@ -76,6 +76,10 @@ const Name = styled.div`
     from { width: 0 }
     to { width: 43% }
   }
+
+  @media screen and (max-width: 768px) {
+    margin-inline: auto;
+  }
 `
 const Navbar = () => {
   return (
