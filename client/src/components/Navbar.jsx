@@ -87,9 +87,9 @@ const Navbar = () => {
       <NavContainer>
         <Name>Portfolio</Name>
         <NavList>
-          <ListItems>Portfolio</ListItems>
+          <ListItems><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Home</Link></ListItems>
           <ListItems>About</ListItems>
-          <ListItems>Contact</ListItems>
+          <ListItems><Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</Link></ListItems>
         </NavList>
       </NavContainer>
     </>
