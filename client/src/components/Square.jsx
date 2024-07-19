@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Square = () => {
+export default function Square({ }) {
     return (
         <>
-    {/*  */}
+            {/* Create Square */}
+            <div className="square"></div>
         </>
     )
 }
+
