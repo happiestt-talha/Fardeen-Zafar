@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const CardContainer = styled.div`
@@ -7,11 +8,25 @@ const CardContainer = styled.div`
     align-items: center;
 `
 
+const FrontFace = styled.div`
+
+`
+const BackFace = styled.div`
+    
+`
 const ContactCard = () => {
     return (
         <>
             <CardContainer>
-                <h1>Contact Card</h1>
+                <Link to='https://www.linkedin.com/in/fardeen-zafar/' target='_blank' rel='noreferrer'>
+                    <FrontFace>
+                        <h1>Front Face</h1>
+                    </FrontFace>
+
+                    <BackFace>
+                        <h1>Back Face</h1>
+                    </BackFace>
+                </Link>
             </CardContainer>
         </>
     )
