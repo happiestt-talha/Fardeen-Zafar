@@ -4,14 +4,17 @@ import styled from 'styled-components'
 const FooterContainer = styled.div`
   width: 100%;
   /* height: 3rem; */
+  padding: 1rem 1rem;
+
   background-color: ${({ theme }) => theme.colors.tertiary};
   /* color: ${({ theme }) => theme.colors.primary}; */
   color: white;
-  padding: 1rem 1rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: 1.5rem;
 

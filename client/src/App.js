@@ -5,7 +5,7 @@ import { theme } from './utils/theme';
 import Home from './containers/Home';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import ContactPage from './containers/ContactPage';
+import ContactPage from './pages/ContactPage';
 
 const AppContainer = styled.div`
   max-width: 100vw;
