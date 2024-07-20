@@ -18,7 +18,7 @@ const ContactCard = () => {
     return (
         <>
             <CardContainer>
-                <Link to='https://www.linkedin.com/in/fardeen-zafar/' target='_blank' rel='noreferrer'>
+                <Link to='https://www.linkedin.com/in/fardeen-zafar/' target='_blank' rel='noreferrer' style={{ textDecoration: 'none', color: 'inherit' }}>
                     <FrontFace>
                         <h1>Front Face</h1>
                     </FrontFace>

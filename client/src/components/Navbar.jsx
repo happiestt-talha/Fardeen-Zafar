@@ -35,6 +35,7 @@ const ListItems = styled.li`
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  transition: all .5s;
 
   &::after {
     content: '';
@@ -42,12 +43,12 @@ const ListItems = styled.li`
     width: 0;
     height: 2px;
     background-color: ${({ theme }) => theme.colors.secondary};
-    transition: width .3s;
+    transition: width .5s;
   }
 
   &:hover {
-    color: ${({ theme }) => theme.colors.tertiary};
-    
+    color: ${({ theme }) => theme.colors.light};
+    transform: scale(1.2);
 
     &::after {
       width: 100%;
@@ -88,7 +89,7 @@ const Navbar = () => {
         <Name>Portfolio</Name>
         <NavList>
           <ListItems><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Home</Link></ListItems>
-          <ListItems>About</ListItems>
+          <ListItems><Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>About</Link></ListItems>
           <ListItems><Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</Link></ListItems>
         </NavList>
       </NavContainer>

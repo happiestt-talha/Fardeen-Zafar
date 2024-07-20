@@ -6,6 +6,7 @@ import Home from './containers/Home';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
 
 const AppContainer = styled.div`
   max-width: 100vw;
@@ -22,6 +23,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/contact' element={<ContactPage />} />
+              <Route path='/about' element={<AboutPage />} />
               <Route path='*' element={<Home />} />
             </Routes>
             <Footer />
