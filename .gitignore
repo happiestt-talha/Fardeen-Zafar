@@ -7,6 +7,7 @@
 .pnp.js
 /*/.lua
 *.lua
+/*/*/*.sql
 
 # testing
 /coverage

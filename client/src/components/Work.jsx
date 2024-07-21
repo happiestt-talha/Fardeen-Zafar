@@ -3,7 +3,7 @@ import Card from './Card'
 import styled from 'styled-components'
 
 const WorkContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   padding: 2rem 6rem;
   height: 100%;
   display: flex;
